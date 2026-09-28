@@ -1,0 +1,5190 @@
+{
+  "cases": [
+    {
+      "id": "AIService_Transcribe:ai_service_transcribe",
+      "operationId": "AIService_Transcribe",
+      "methodName": "ai_service_transcribe",
+      "namespace": [
+        "aiService"
+      ],
+      "mode": "normal",
+      "owner": "ai_service",
+      "arguments": {
+        "audio": {
+          "content": "content",
+          "uri": "https://example.com",
+          "filename": "Example Name",
+          "contentType": "contentType"
+        }
+      },
+      "argumentOrder": [
+        "audio"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "text": "text"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_BatchDeleteAttachments:attachment_service_batch_delete_attachments",
+      "operationId": "AttachmentService_BatchDeleteAttachments",
+      "methodName": "attachment_service_batch_delete_attachments",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "names": [
+          "Example Name"
+        ]
+      },
+      "argumentOrder": [
+        "names"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_CreateAttachment:attachment_service_create_attachment",
+      "operationId": "AttachmentService_CreateAttachment",
+      "methodName": "attachment_service_create_attachment",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "filename": "Example Name",
+        "type": "type",
+        "attachment_id": "attachment-1",
+        "name": "Example Name",
+        "create_time": "2024-01-01T00:00:00Z",
+        "content": "content",
+        "external_link": "https://example.com",
+        "size": "size",
+        "memo": "memo",
+        "motion_media": {
+          "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+          "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+          "groupId": "group-1",
+          "presentationTimestampUs": "2024-01-01T00:00:00Z",
+          "hasEmbeddedVideo": false
+        },
+        "media_metadata": {
+          "width": 1,
+          "height": 1,
+          "photo": {
+            "captureTime": {
+              "localDateTime": "2024-01-01T00:00:00Z",
+              "utcOffset": "utcOffset"
+            },
+            "location": {
+              "latitude": 1,
+              "longitude": 1,
+              "altitudeMeters": 1
+            },
+            "sourceExifOrientation": 1,
+            "cameraMake": "cameraMake",
+            "cameraModel": "cameraModel",
+            "lensModel": "lensModel",
+            "fNumber": 1,
+            "exposureTimeSeconds": 1,
+            "iso": 1,
+            "focalLengthMm": 1
+          },
+          "video": {
+            "durationSeconds": 1
+          }
+        },
+        "creator": "creator"
+      },
+      "argumentOrder": [
+        "filename",
+        "type",
+        "attachment_id",
+        "name",
+        "create_time",
+        "content",
+        "external_link",
+        "size",
+        "memo",
+        "motion_media",
+        "media_metadata",
+        "creator"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "filename": "Example Name",
+          "content": "content",
+          "externalLink": "https://example.com",
+          "type": "type",
+          "size": "size",
+          "memo": "memo",
+          "motionMedia": {
+            "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+            "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+            "groupId": "group-1",
+            "presentationTimestampUs": "2024-01-01T00:00:00Z",
+            "hasEmbeddedVideo": false
+          },
+          "mediaMetadata": {
+            "width": 1,
+            "height": 1,
+            "photo": {
+              "captureTime": {
+                "localDateTime": "2024-01-01T00:00:00Z",
+                "utcOffset": "utcOffset"
+              },
+              "location": {
+                "latitude": 1,
+                "longitude": 1,
+                "altitudeMeters": 1
+              },
+              "sourceExifOrientation": 1,
+              "cameraMake": "cameraMake",
+              "cameraModel": "cameraModel",
+              "lensModel": "lensModel",
+              "fNumber": 1,
+              "exposureTimeSeconds": 1,
+              "iso": 1,
+              "focalLengthMm": 1
+            },
+            "video": {
+              "durationSeconds": 1
+            }
+          },
+          "creator": "creator"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_DeleteAttachment:attachment_service_delete_attachment",
+      "operationId": "AttachmentService_DeleteAttachment",
+      "methodName": "attachment_service_delete_attachment",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "attachment": "attachment"
+      },
+      "argumentOrder": [
+        "attachment"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_GetAttachment:attachment_service_get_attachment",
+      "operationId": "AttachmentService_GetAttachment",
+      "methodName": "attachment_service_get_attachment",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "attachment": "attachment"
+      },
+      "argumentOrder": [
+        "attachment"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "filename": "Example Name",
+          "content": "content",
+          "externalLink": "https://example.com",
+          "type": "type",
+          "size": "size",
+          "memo": "memo",
+          "motionMedia": {
+            "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+            "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+            "groupId": "group-1",
+            "presentationTimestampUs": "2024-01-01T00:00:00Z",
+            "hasEmbeddedVideo": false
+          },
+          "mediaMetadata": {
+            "width": 1,
+            "height": 1,
+            "photo": {
+              "captureTime": {
+                "localDateTime": "2024-01-01T00:00:00Z",
+                "utcOffset": "utcOffset"
+              },
+              "location": {
+                "latitude": 1,
+                "longitude": 1,
+                "altitudeMeters": 1
+              },
+              "sourceExifOrientation": 1,
+              "cameraMake": "cameraMake",
+              "cameraModel": "cameraModel",
+              "lensModel": "lensModel",
+              "fNumber": 1,
+              "exposureTimeSeconds": 1,
+              "iso": 1,
+              "focalLengthMm": 1
+            },
+            "video": {
+              "durationSeconds": 1
+            }
+          },
+          "creator": "creator"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_ListAttachments:attachment_service_list_attachments",
+      "operationId": "AttachmentService_ListAttachments",
+      "methodName": "attachment_service_list_attachments",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "page_size": 30,
+        "page_token": "pageToken",
+        "filter": "filter",
+        "order_by": "orderBy"
+      },
+      "argumentOrder": [
+        "page_size",
+        "page_token",
+        "filter",
+        "order_by"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_UpdateAttachment:attachment_service_update_attachment",
+      "operationId": "AttachmentService_UpdateAttachment",
+      "methodName": "attachment_service_update_attachment",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "attachment": "attachment",
+        "filename": "Example Name",
+        "type": "type",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "create_time": "2024-01-01T00:00:00Z",
+        "content": "content",
+        "external_link": "https://example.com",
+        "size": "size",
+        "memo": "memo",
+        "motion_media": {
+          "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+          "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+          "groupId": "group-1",
+          "presentationTimestampUs": "2024-01-01T00:00:00Z",
+          "hasEmbeddedVideo": false
+        },
+        "media_metadata": {
+          "width": 1,
+          "height": 1,
+          "photo": {
+            "captureTime": {
+              "localDateTime": "2024-01-01T00:00:00Z",
+              "utcOffset": "utcOffset"
+            },
+            "location": {
+              "latitude": 1,
+              "longitude": 1,
+              "altitudeMeters": 1
+            },
+            "sourceExifOrientation": 1,
+            "cameraMake": "cameraMake",
+            "cameraModel": "cameraModel",
+            "lensModel": "lensModel",
+            "fNumber": 1,
+            "exposureTimeSeconds": 1,
+            "iso": 1,
+            "focalLengthMm": 1
+          },
+          "video": {
+            "durationSeconds": 1
+          }
+        },
+        "creator": "creator"
+      },
+      "argumentOrder": [
+        "attachment",
+        "filename",
+        "type",
+        "update_mask",
+        "name",
+        "create_time",
+        "content",
+        "external_link",
+        "size",
+        "memo",
+        "motion_media",
+        "media_metadata",
+        "creator"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "filename": "Example Name",
+          "content": "content",
+          "externalLink": "https://example.com",
+          "type": "type",
+          "size": "size",
+          "memo": "memo",
+          "motionMedia": {
+            "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+            "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+            "groupId": "group-1",
+            "presentationTimestampUs": "2024-01-01T00:00:00Z",
+            "hasEmbeddedVideo": false
+          },
+          "mediaMetadata": {
+            "width": 1,
+            "height": 1,
+            "photo": {
+              "captureTime": {
+                "localDateTime": "2024-01-01T00:00:00Z",
+                "utcOffset": "utcOffset"
+              },
+              "location": {
+                "latitude": 1,
+                "longitude": 1,
+                "altitudeMeters": 1
+              },
+              "sourceExifOrientation": 1,
+              "cameraMake": "cameraMake",
+              "cameraModel": "cameraModel",
+              "lensModel": "lensModel",
+              "fNumber": 1,
+              "exposureTimeSeconds": 1,
+              "iso": 1,
+              "focalLengthMm": 1
+            },
+            "video": {
+              "durationSeconds": 1
+            }
+          },
+          "creator": "creator"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentService_UploadAttachment:attachment_service_upload_attachment",
+      "operationId": "AttachmentService_UploadAttachment",
+      "methodName": "attachment_service_upload_attachment",
+      "namespace": [
+        "attachmentService"
+      ],
+      "mode": "normal",
+      "owner": "attachment_service",
+      "arguments": {
+        "write_offset": "writeOffset",
+        "spec": {
+          "attachment": {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          },
+          "attachmentId": "attachment-1",
+          "totalSize": "totalSize"
+        },
+        "upload_id": "upload-1",
+        "data": "data",
+        "finish_write": false
+      },
+      "argumentOrder": [
+        "write_offset",
+        "spec",
+        "upload_id",
+        "data",
+        "finish_write"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "uploadId": "upload-1",
+          "committedSize": "committedSize",
+          "attachment": {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          },
+          "maxChunkSize": 1
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AuthService_GetCurrentUser:auth_service_get_current_user",
+      "operationId": "AuthService_GetCurrentUser",
+      "methodName": "auth_service_get_current_user",
+      "namespace": [
+        "authService"
+      ],
+      "mode": "normal",
+      "owner": "auth_service",
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "user": {
+            "name": "Example Name",
+            "role": "ROLE_UNSPECIFIED",
+            "username": "Example Name",
+            "email": "user@example.com",
+            "displayName": "Example Name",
+            "avatarUrl": "https://example.com",
+            "description": "example text",
+            "password": "password",
+            "state": "STATE_UNSPECIFIED",
+            "createTime": "2024-01-01T00:00:00Z",
+            "updateTime": "2024-01-01T00:00:00Z"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AuthService_RefreshToken:auth_service_refresh_token",
+      "operationId": "AuthService_RefreshToken",
+      "methodName": "auth_service_refresh_token",
+      "namespace": [
+        "authService"
+      ],
+      "mode": "normal",
+      "owner": "auth_service",
+      "arguments": {
+        "body": {}
+      },
+      "argumentOrder": [
+        "body"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "accessToken": "accessToken",
+          "expiresAt": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AuthService_SignIn:auth_service_sign_in",
+      "operationId": "AuthService_SignIn",
+      "methodName": "auth_service_sign_in",
+      "namespace": [
+        "authService"
+      ],
+      "mode": "normal",
+      "owner": "auth_service",
+      "arguments": {
+        "password_credentials": {
+          "username": "Example Name",
+          "password": "password"
+        },
+        "sso_credentials": {
+          "idpName": "Example Name",
+          "code": "code",
+          "redirectUri": "https://example.com",
+          "codeVerifier": "codeVerifier"
+        }
+      },
+      "argumentOrder": [
+        "password_credentials",
+        "sso_credentials"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "user": {
+            "name": "Example Name",
+            "role": "ROLE_UNSPECIFIED",
+            "username": "Example Name",
+            "email": "user@example.com",
+            "displayName": "Example Name",
+            "avatarUrl": "https://example.com",
+            "description": "example text",
+            "password": "password",
+            "state": "STATE_UNSPECIFIED",
+            "createTime": "2024-01-01T00:00:00Z",
+            "updateTime": "2024-01-01T00:00:00Z"
+          },
+          "accessToken": "accessToken",
+          "accessTokenExpiresAt": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AuthService_SignOut:auth_service_sign_out",
+      "operationId": "AuthService_SignOut",
+      "methodName": "auth_service_sign_out",
+      "namespace": [
+        "authService"
+      ],
+      "mode": "normal",
+      "owner": "auth_service",
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "IdentityProviderService_CreateIdentityProvider:identity_provider_service_create_identity_provider",
+      "operationId": "IdentityProviderService_CreateIdentityProvider",
+      "methodName": "identity_provider_service_create_identity_provider",
+      "namespace": [
+        "identityProviderService"
+      ],
+      "mode": "normal",
+      "owner": "identity_provider_service",
+      "arguments": {
+        "type": "TYPE_UNSPECIFIED",
+        "title": "title",
+        "config": {
+          "oauth2Config": {
+            "clientId": "client-1",
+            "clientSecret": "clientSecret",
+            "authUrl": "https://example.com",
+            "tokenUrl": "https://example.com",
+            "userInfoUrl": "https://example.com",
+            "scopes": [
+              "scopes"
+            ],
+            "fieldMapping": {
+              "identifier": "identifier",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "avatarUrl": "https://example.com"
+            }
+          }
+        },
+        "identity_provider_id": "identityProvider-1",
+        "name": "Example Name",
+        "identifier_filter": "identifierFilter"
+      },
+      "argumentOrder": [
+        "type",
+        "title",
+        "config",
+        "identity_provider_id",
+        "name",
+        "identifier_filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "type": "TYPE_UNSPECIFIED",
+          "title": "title",
+          "identifierFilter": "identifierFilter",
+          "config": {
+            "oauth2Config": {
+              "clientId": "client-1",
+              "clientSecret": "clientSecret",
+              "authUrl": "https://example.com",
+              "tokenUrl": "https://example.com",
+              "userInfoUrl": "https://example.com",
+              "scopes": [
+                "scopes"
+              ],
+              "fieldMapping": {
+                "identifier": "identifier",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "avatarUrl": "https://example.com"
+              }
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "IdentityProviderService_DeleteIdentityProvider:identity_provider_service_delete_identity_provider",
+      "operationId": "IdentityProviderService_DeleteIdentityProvider",
+      "methodName": "identity_provider_service_delete_identity_provider",
+      "namespace": [
+        "identityProviderService"
+      ],
+      "mode": "normal",
+      "owner": "identity_provider_service",
+      "arguments": {
+        "identity_provider": "identity-provider"
+      },
+      "argumentOrder": [
+        "identity_provider"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "IdentityProviderService_GetIdentityProvider:identity_provider_service_get_identity_provider",
+      "operationId": "IdentityProviderService_GetIdentityProvider",
+      "methodName": "identity_provider_service_get_identity_provider",
+      "namespace": [
+        "identityProviderService"
+      ],
+      "mode": "normal",
+      "owner": "identity_provider_service",
+      "arguments": {
+        "identity_provider": "identity-provider"
+      },
+      "argumentOrder": [
+        "identity_provider"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "type": "TYPE_UNSPECIFIED",
+          "title": "title",
+          "identifierFilter": "identifierFilter",
+          "config": {
+            "oauth2Config": {
+              "clientId": "client-1",
+              "clientSecret": "clientSecret",
+              "authUrl": "https://example.com",
+              "tokenUrl": "https://example.com",
+              "userInfoUrl": "https://example.com",
+              "scopes": [
+                "scopes"
+              ],
+              "fieldMapping": {
+                "identifier": "identifier",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "avatarUrl": "https://example.com"
+              }
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "IdentityProviderService_ListIdentityProviders:identity_provider_service_list_identity_providers",
+      "operationId": "IdentityProviderService_ListIdentityProviders",
+      "methodName": "identity_provider_service_list_identity_providers",
+      "namespace": [
+        "identityProviderService"
+      ],
+      "mode": "normal",
+      "owner": "identity_provider_service",
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "identityProviders": [
+            {
+              "name": "Example Name",
+              "type": "TYPE_UNSPECIFIED",
+              "title": "title",
+              "identifierFilter": "identifierFilter",
+              "config": {
+                "oauth2Config": {
+                  "clientId": "client-1",
+                  "clientSecret": "clientSecret",
+                  "authUrl": "https://example.com",
+                  "tokenUrl": "https://example.com",
+                  "userInfoUrl": "https://example.com",
+                  "scopes": [
+                    "scopes"
+                  ],
+                  "fieldMapping": {
+                    "identifier": "identifier",
+                    "displayName": "Example Name",
+                    "email": "user@example.com",
+                    "avatarUrl": "https://example.com"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "IdentityProviderService_UpdateIdentityProvider:identity_provider_service_update_identity_provider",
+      "operationId": "IdentityProviderService_UpdateIdentityProvider",
+      "methodName": "identity_provider_service_update_identity_provider",
+      "namespace": [
+        "identityProviderService"
+      ],
+      "mode": "normal",
+      "owner": "identity_provider_service",
+      "arguments": {
+        "identity_provider": "identity-provider",
+        "type": "TYPE_UNSPECIFIED",
+        "title": "title",
+        "config": {
+          "oauth2Config": {
+            "clientId": "client-1",
+            "clientSecret": "clientSecret",
+            "authUrl": "https://example.com",
+            "tokenUrl": "https://example.com",
+            "userInfoUrl": "https://example.com",
+            "scopes": [
+              "scopes"
+            ],
+            "fieldMapping": {
+              "identifier": "identifier",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "avatarUrl": "https://example.com"
+            }
+          }
+        },
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "identifier_filter": "identifierFilter"
+      },
+      "argumentOrder": [
+        "identity_provider",
+        "type",
+        "title",
+        "config",
+        "update_mask",
+        "name",
+        "identifier_filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "type": "TYPE_UNSPECIFIED",
+          "title": "title",
+          "identifierFilter": "identifierFilter",
+          "config": {
+            "oauth2Config": {
+              "clientId": "client-1",
+              "clientSecret": "clientSecret",
+              "authUrl": "https://example.com",
+              "tokenUrl": "https://example.com",
+              "userInfoUrl": "https://example.com",
+              "scopes": [
+                "scopes"
+              ],
+              "fieldMapping": {
+                "identifier": "identifier",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "avatarUrl": "https://example.com"
+              }
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_BatchGetInstanceSettings:instance_service_batch_get_instance_settings",
+      "operationId": "InstanceService_BatchGetInstanceSettings",
+      "methodName": "instance_service_batch_get_instance_settings",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {
+        "names": [
+          "Example Name"
+        ]
+      },
+      "argumentOrder": [
+        "names"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "settings": [
+            {
+              "name": "Example Name",
+              "generalSetting": {
+                "disallowUserRegistration": false,
+                "disallowPasswordAuth": false,
+                "additionalScript": "additionalScript",
+                "additionalStyle": "additionalStyle",
+                "customProfile": {
+                  "title": "title",
+                  "description": "example text",
+                  "logoUrl": "https://example.com"
+                },
+                "weekStartDayOffset": 1,
+                "disallowChangeUsername": false,
+                "disallowChangeNickname": false
+              },
+              "storageSetting": {
+                "storageType": "STORAGE_TYPE_UNSPECIFIED",
+                "filepathTemplate": "filepathTemplate",
+                "uploadSizeLimitMb": "uploadSizeLimitMb",
+                "s3Config": {
+                  "accessKeyId": "accessKey-1",
+                  "accessKeySecret": "accessKeySecret",
+                  "endpoint": "endpoint",
+                  "region": "region",
+                  "bucket": "bucket",
+                  "usePathStyle": false,
+                  "insecureSkipTlsVerify": false
+                },
+                "storages": [
+                  {
+                    "id": "id-1",
+                    "name": "Example Name",
+                    "type": "STORAGE_TYPE_UNSPECIFIED",
+                    "s3Config": {
+                      "accessKeyId": "accessKey-1",
+                      "accessKeySecret": "accessKeySecret",
+                      "endpoint": "endpoint",
+                      "region": "region",
+                      "bucket": "bucket",
+                      "usePathStyle": false,
+                      "insecureSkipTlsVerify": false
+                    }
+                  }
+                ],
+                "defaultStorageId": "defaultStorage-1"
+              },
+              "memoRelatedSetting": {
+                "contentLengthLimit": 1,
+                "enableDoubleClickEdit": false,
+                "reactions": [
+                  "reactions"
+                ]
+              },
+              "tagsSetting": {
+                "tags": {
+                  "key": {
+                    "backgroundColor": {
+                      "red": 1,
+                      "green": 1,
+                      "blue": 1,
+                      "alpha": 1
+                    },
+                    "blurContent": false
+                  }
+                }
+              },
+              "notificationSetting": {
+                "email": {
+                  "enabled": false,
+                  "smtpHost": "smtpHost",
+                  "smtpPort": 1,
+                  "smtpUsername": "Example Name",
+                  "smtpPassword": "smtpPassword",
+                  "fromEmail": "user@example.com",
+                  "fromName": "Example Name",
+                  "replyTo": "replyTo",
+                  "useTls": false,
+                  "useSsl": false
+                }
+              },
+              "aiSetting": {
+                "providers": [
+                  {
+                    "id": "id-1",
+                    "title": "title",
+                    "type": "AI_PROVIDER_TYPE_UNSPECIFIED",
+                    "endpoint": "endpoint",
+                    "apiKey": "apiKey",
+                    "apiKeySet": false,
+                    "apiKeyHint": "apiKeyHint"
+                  }
+                ],
+                "transcription": {
+                  "providerId": "provider-1",
+                  "model": "model",
+                  "language": "language",
+                  "prompt": "prompt"
+                }
+              },
+              "accessSetting": {
+                "accessMode": "INSTANCE_ACCESS_MODE_UNSPECIFIED"
+              }
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_GetInstanceProfile:instance_service_get_instance_profile",
+      "operationId": "InstanceService_GetInstanceProfile",
+      "methodName": "instance_service_get_instance_profile",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "version": "version",
+          "demo": false,
+          "instanceUrl": "https://example.com",
+          "admin": {
+            "name": "Example Name",
+            "role": "ROLE_UNSPECIFIED",
+            "username": "Example Name",
+            "email": "user@example.com",
+            "displayName": "Example Name",
+            "avatarUrl": "https://example.com",
+            "description": "example text",
+            "password": "password",
+            "state": "STATE_UNSPECIFIED",
+            "createTime": "2024-01-01T00:00:00Z",
+            "updateTime": "2024-01-01T00:00:00Z"
+          },
+          "commit": "commit",
+          "needsSetup": false,
+          "accessMode": "INSTANCE_ACCESS_MODE_UNSPECIFIED",
+          "challenge": {
+            "provider": "provider",
+            "siteKey": "siteKey"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_GetInstanceSetting:instance_service_get_instance_setting",
+      "operationId": "InstanceService_GetInstanceSetting",
+      "methodName": "instance_service_get_instance_setting",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {
+        "instance": "instance"
+      },
+      "argumentOrder": [
+        "instance"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "generalSetting": {
+            "disallowUserRegistration": false,
+            "disallowPasswordAuth": false,
+            "additionalScript": "additionalScript",
+            "additionalStyle": "additionalStyle",
+            "customProfile": {
+              "title": "title",
+              "description": "example text",
+              "logoUrl": "https://example.com"
+            },
+            "weekStartDayOffset": 1,
+            "disallowChangeUsername": false,
+            "disallowChangeNickname": false
+          },
+          "storageSetting": {
+            "storageType": "STORAGE_TYPE_UNSPECIFIED",
+            "filepathTemplate": "filepathTemplate",
+            "uploadSizeLimitMb": "uploadSizeLimitMb",
+            "s3Config": {
+              "accessKeyId": "accessKey-1",
+              "accessKeySecret": "accessKeySecret",
+              "endpoint": "endpoint",
+              "region": "region",
+              "bucket": "bucket",
+              "usePathStyle": false,
+              "insecureSkipTlsVerify": false
+            },
+            "storages": [
+              {
+                "id": "id-1",
+                "name": "Example Name",
+                "type": "STORAGE_TYPE_UNSPECIFIED",
+                "s3Config": {
+                  "accessKeyId": "accessKey-1",
+                  "accessKeySecret": "accessKeySecret",
+                  "endpoint": "endpoint",
+                  "region": "region",
+                  "bucket": "bucket",
+                  "usePathStyle": false,
+                  "insecureSkipTlsVerify": false
+                }
+              }
+            ],
+            "defaultStorageId": "defaultStorage-1"
+          },
+          "memoRelatedSetting": {
+            "contentLengthLimit": 1,
+            "enableDoubleClickEdit": false,
+            "reactions": [
+              "reactions"
+            ]
+          },
+          "tagsSetting": {
+            "tags": {
+              "key": {
+                "backgroundColor": {
+                  "red": 1,
+                  "green": 1,
+                  "blue": 1,
+                  "alpha": 1
+                },
+                "blurContent": false
+              }
+            }
+          },
+          "notificationSetting": {
+            "email": {
+              "enabled": false,
+              "smtpHost": "smtpHost",
+              "smtpPort": 1,
+              "smtpUsername": "Example Name",
+              "smtpPassword": "smtpPassword",
+              "fromEmail": "user@example.com",
+              "fromName": "Example Name",
+              "replyTo": "replyTo",
+              "useTls": false,
+              "useSsl": false
+            }
+          },
+          "aiSetting": {
+            "providers": [
+              {
+                "id": "id-1",
+                "title": "title",
+                "type": "AI_PROVIDER_TYPE_UNSPECIFIED",
+                "endpoint": "endpoint",
+                "apiKey": "apiKey",
+                "apiKeySet": false,
+                "apiKeyHint": "apiKeyHint"
+              }
+            ],
+            "transcription": {
+              "providerId": "provider-1",
+              "model": "model",
+              "language": "language",
+              "prompt": "prompt"
+            }
+          },
+          "accessSetting": {
+            "accessMode": "INSTANCE_ACCESS_MODE_UNSPECIFIED"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_GetInstanceStats:instance_service_get_instance_stats",
+      "operationId": "InstanceService_GetInstanceStats",
+      "methodName": "instance_service_get_instance_stats",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "database": {
+            "driver": "driver",
+            "sizeBytes": "sizeBytes"
+          },
+          "localStorageBytes": "localStorageBytes",
+          "generatedTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_TestInstanceEmailSetting:instance_service_test_instance_email_setting",
+      "operationId": "InstanceService_TestInstanceEmailSetting",
+      "methodName": "instance_service_test_instance_email_setting",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {
+        "email": {
+          "enabled": false,
+          "smtpHost": "smtpHost",
+          "smtpPort": 1,
+          "smtpUsername": "Example Name",
+          "smtpPassword": "smtpPassword",
+          "fromEmail": "user@example.com",
+          "fromName": "Example Name",
+          "replyTo": "replyTo",
+          "useTls": false,
+          "useSsl": false
+        },
+        "recipient_email": "user@example.com"
+      },
+      "argumentOrder": [
+        "email",
+        "recipient_email"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "InstanceService_UpdateInstanceSetting:instance_service_update_instance_setting",
+      "operationId": "InstanceService_UpdateInstanceSetting",
+      "methodName": "instance_service_update_instance_setting",
+      "namespace": [
+        "instanceService"
+      ],
+      "mode": "normal",
+      "owner": "instance_service",
+      "arguments": {
+        "instance": "instance",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "general_setting": {
+          "disallowUserRegistration": false,
+          "disallowPasswordAuth": false,
+          "additionalScript": "additionalScript",
+          "additionalStyle": "additionalStyle",
+          "customProfile": {
+            "title": "title",
+            "description": "example text",
+            "logoUrl": "https://example.com"
+          },
+          "weekStartDayOffset": 1,
+          "disallowChangeUsername": false,
+          "disallowChangeNickname": false
+        },
+        "storage_setting": {
+          "storageType": "STORAGE_TYPE_UNSPECIFIED",
+          "filepathTemplate": "filepathTemplate",
+          "uploadSizeLimitMb": "uploadSizeLimitMb",
+          "s3Config": {
+            "accessKeyId": "accessKey-1",
+            "accessKeySecret": "accessKeySecret",
+            "endpoint": "endpoint",
+            "region": "region",
+            "bucket": "bucket",
+            "usePathStyle": false,
+            "insecureSkipTlsVerify": false
+          },
+          "storages": [
+            {
+              "id": "id-1",
+              "name": "Example Name",
+              "type": "STORAGE_TYPE_UNSPECIFIED",
+              "s3Config": {
+                "accessKeyId": "accessKey-1",
+                "accessKeySecret": "accessKeySecret",
+                "endpoint": "endpoint",
+                "region": "region",
+                "bucket": "bucket",
+                "usePathStyle": false,
+                "insecureSkipTlsVerify": false
+              }
+            }
+          ],
+          "defaultStorageId": "defaultStorage-1"
+        },
+        "memo_related_setting": {
+          "contentLengthLimit": 1,
+          "enableDoubleClickEdit": false,
+          "reactions": [
+            "reactions"
+          ]
+        },
+        "tags_setting": {
+          "tags": {
+            "key": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1,
+                "alpha": 1
+              },
+              "blurContent": false
+            }
+          }
+        },
+        "notification_setting": {
+          "email": {
+            "enabled": false,
+            "smtpHost": "smtpHost",
+            "smtpPort": 1,
+            "smtpUsername": "Example Name",
+            "smtpPassword": "smtpPassword",
+            "fromEmail": "user@example.com",
+            "fromName": "Example Name",
+            "replyTo": "replyTo",
+            "useTls": false,
+            "useSsl": false
+          }
+        },
+        "ai_setting": {
+          "providers": [
+            {
+              "id": "id-1",
+              "title": "title",
+              "type": "AI_PROVIDER_TYPE_UNSPECIFIED",
+              "endpoint": "endpoint",
+              "apiKey": "apiKey",
+              "apiKeySet": false,
+              "apiKeyHint": "apiKeyHint"
+            }
+          ],
+          "transcription": {
+            "providerId": "provider-1",
+            "model": "model",
+            "language": "language",
+            "prompt": "prompt"
+          }
+        },
+        "access_setting": {
+          "accessMode": "INSTANCE_ACCESS_MODE_UNSPECIFIED"
+        }
+      },
+      "argumentOrder": [
+        "instance",
+        "update_mask",
+        "name",
+        "general_setting",
+        "storage_setting",
+        "memo_related_setting",
+        "tags_setting",
+        "notification_setting",
+        "ai_setting",
+        "access_setting"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "generalSetting": {
+            "disallowUserRegistration": false,
+            "disallowPasswordAuth": false,
+            "additionalScript": "additionalScript",
+            "additionalStyle": "additionalStyle",
+            "customProfile": {
+              "title": "title",
+              "description": "example text",
+              "logoUrl": "https://example.com"
+            },
+            "weekStartDayOffset": 1,
+            "disallowChangeUsername": false,
+            "disallowChangeNickname": false
+          },
+          "storageSetting": {
+            "storageType": "STORAGE_TYPE_UNSPECIFIED",
+            "filepathTemplate": "filepathTemplate",
+            "uploadSizeLimitMb": "uploadSizeLimitMb",
+            "s3Config": {
+              "accessKeyId": "accessKey-1",
+              "accessKeySecret": "accessKeySecret",
+              "endpoint": "endpoint",
+              "region": "region",
+              "bucket": "bucket",
+              "usePathStyle": false,
+              "insecureSkipTlsVerify": false
+            },
+            "storages": [
+              {
+                "id": "id-1",
+                "name": "Example Name",
+                "type": "STORAGE_TYPE_UNSPECIFIED",
+                "s3Config": {
+                  "accessKeyId": "accessKey-1",
+                  "accessKeySecret": "accessKeySecret",
+                  "endpoint": "endpoint",
+                  "region": "region",
+                  "bucket": "bucket",
+                  "usePathStyle": false,
+                  "insecureSkipTlsVerify": false
+                }
+              }
+            ],
+            "defaultStorageId": "defaultStorage-1"
+          },
+          "memoRelatedSetting": {
+            "contentLengthLimit": 1,
+            "enableDoubleClickEdit": false,
+            "reactions": [
+              "reactions"
+            ]
+          },
+          "tagsSetting": {
+            "tags": {
+              "key": {
+                "backgroundColor": {
+                  "red": 1,
+                  "green": 1,
+                  "blue": 1,
+                  "alpha": 1
+                },
+                "blurContent": false
+              }
+            }
+          },
+          "notificationSetting": {
+            "email": {
+              "enabled": false,
+              "smtpHost": "smtpHost",
+              "smtpPort": 1,
+              "smtpUsername": "Example Name",
+              "smtpPassword": "smtpPassword",
+              "fromEmail": "user@example.com",
+              "fromName": "Example Name",
+              "replyTo": "replyTo",
+              "useTls": false,
+              "useSsl": false
+            }
+          },
+          "aiSetting": {
+            "providers": [
+              {
+                "id": "id-1",
+                "title": "title",
+                "type": "AI_PROVIDER_TYPE_UNSPECIFIED",
+                "endpoint": "endpoint",
+                "apiKey": "apiKey",
+                "apiKeySet": false,
+                "apiKeyHint": "apiKeyHint"
+              }
+            ],
+            "transcription": {
+              "providerId": "provider-1",
+              "model": "model",
+              "language": "language",
+              "prompt": "prompt"
+            }
+          },
+          "accessSetting": {
+            "accessMode": "INSTANCE_ACCESS_MODE_UNSPECIFIED"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_BatchGetLinkMetadata:memo_service_batch_get_link_metadata",
+      "operationId": "MemoService_BatchGetLinkMetadata",
+      "methodName": "memo_service_batch_get_link_metadata",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "urls": [
+          "https://example.com"
+        ]
+      },
+      "argumentOrder": [
+        "urls"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "linkMetadata": [
+            {
+              "url": "https://example.com",
+              "title": "title",
+              "description": "example text",
+              "image": "image"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_CreateMemo:memo_service_create_memo",
+      "operationId": "MemoService_CreateMemo",
+      "methodName": "memo_service_create_memo",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "state": "STATE_UNSPECIFIED",
+        "content": "content",
+        "visibility": "VISIBILITY_UNSPECIFIED",
+        "memo_id": "memo-1",
+        "name": "Example Name",
+        "creator": "creator",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z",
+        "tags": [
+          "tags"
+        ],
+        "pinned": false,
+        "attachments": [
+          {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          }
+        ],
+        "relations": [
+          {
+            "memo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "relatedMemo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "type": "TYPE_UNSPECIFIED"
+          }
+        ],
+        "reactions": [
+          {
+            "name": "Example Name",
+            "creator": "creator",
+            "reactionType": "reactionType",
+            "createTime": "2024-01-01T00:00:00Z"
+          }
+        ],
+        "property": {
+          "hasLink": false,
+          "hasTaskList": false,
+          "hasCode": false,
+          "hasIncompleteTasks": false,
+          "title": "title"
+        },
+        "parent": "parent",
+        "snippet": "snippet",
+        "location": {
+          "placeholder": "placeholder",
+          "latitude": 1,
+          "longitude": 1
+        },
+        "space": "space"
+      },
+      "argumentOrder": [
+        "state",
+        "content",
+        "visibility",
+        "memo_id",
+        "name",
+        "creator",
+        "create_time",
+        "update_time",
+        "tags",
+        "pinned",
+        "attachments",
+        "relations",
+        "reactions",
+        "property",
+        "parent",
+        "snippet",
+        "location",
+        "space"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "state": "STATE_UNSPECIFIED",
+          "creator": "creator",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "content": "content",
+          "visibility": "VISIBILITY_UNSPECIFIED",
+          "tags": [
+            "tags"
+          ],
+          "pinned": false,
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "property": {
+            "hasLink": false,
+            "hasTaskList": false,
+            "hasCode": false,
+            "hasIncompleteTasks": false,
+            "title": "title"
+          },
+          "parent": "parent",
+          "snippet": "snippet",
+          "location": {
+            "placeholder": "placeholder",
+            "latitude": 1,
+            "longitude": 1
+          },
+          "space": "space"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_CreateMemoComment:memo_service_create_memo_comment",
+      "operationId": "MemoService_CreateMemoComment",
+      "methodName": "memo_service_create_memo_comment",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "state": "STATE_UNSPECIFIED",
+        "content": "content",
+        "visibility": "VISIBILITY_UNSPECIFIED",
+        "comment_id": "comment-1",
+        "name": "Example Name",
+        "creator": "creator",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z",
+        "tags": [
+          "tags"
+        ],
+        "pinned": false,
+        "attachments": [
+          {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          }
+        ],
+        "relations": [
+          {
+            "memo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "relatedMemo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "type": "TYPE_UNSPECIFIED"
+          }
+        ],
+        "reactions": [
+          {
+            "name": "Example Name",
+            "creator": "creator",
+            "reactionType": "reactionType",
+            "createTime": "2024-01-01T00:00:00Z"
+          }
+        ],
+        "property": {
+          "hasLink": false,
+          "hasTaskList": false,
+          "hasCode": false,
+          "hasIncompleteTasks": false,
+          "title": "title"
+        },
+        "parent": "parent",
+        "snippet": "snippet",
+        "location": {
+          "placeholder": "placeholder",
+          "latitude": 1,
+          "longitude": 1
+        },
+        "space": "space"
+      },
+      "argumentOrder": [
+        "memo",
+        "state",
+        "content",
+        "visibility",
+        "comment_id",
+        "name",
+        "creator",
+        "create_time",
+        "update_time",
+        "tags",
+        "pinned",
+        "attachments",
+        "relations",
+        "reactions",
+        "property",
+        "parent",
+        "snippet",
+        "location",
+        "space"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "state": "STATE_UNSPECIFIED",
+          "creator": "creator",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "content": "content",
+          "visibility": "VISIBILITY_UNSPECIFIED",
+          "tags": [
+            "tags"
+          ],
+          "pinned": false,
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "property": {
+            "hasLink": false,
+            "hasTaskList": false,
+            "hasCode": false,
+            "hasIncompleteTasks": false,
+            "title": "title"
+          },
+          "parent": "parent",
+          "snippet": "snippet",
+          "location": {
+            "placeholder": "placeholder",
+            "latitude": 1,
+            "longitude": 1
+          },
+          "space": "space"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_CreateMemoShare:memo_service_create_memo_share",
+      "operationId": "MemoService_CreateMemoShare",
+      "methodName": "memo_service_create_memo_share",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "name": "Example Name",
+        "create_time": "2024-01-01T00:00:00Z",
+        "expire_time": "2024-01-01T00:00:00Z"
+      },
+      "argumentOrder": [
+        "memo",
+        "name",
+        "create_time",
+        "expire_time"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "expireTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_DeleteMemo:memo_service_delete_memo",
+      "operationId": "MemoService_DeleteMemo",
+      "methodName": "memo_service_delete_memo",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "force": false
+      },
+      "argumentOrder": [
+        "memo",
+        "force"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_DeleteMemoReaction:memo_service_delete_memo_reaction",
+      "operationId": "MemoService_DeleteMemoReaction",
+      "methodName": "memo_service_delete_memo_reaction",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "reaction": "reaction"
+      },
+      "argumentOrder": [
+        "memo",
+        "reaction"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_DeleteMemoShare:memo_service_delete_memo_share",
+      "operationId": "MemoService_DeleteMemoShare",
+      "methodName": "memo_service_delete_memo_share",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "share": "share"
+      },
+      "argumentOrder": [
+        "memo",
+        "share"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_GetLinkMetadata:memo_service_get_link_metadata",
+      "operationId": "MemoService_GetLinkMetadata",
+      "methodName": "memo_service_get_link_metadata",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "url": "https://example.com"
+      },
+      "argumentOrder": [
+        "url"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "url": "https://example.com",
+          "title": "title",
+          "description": "example text",
+          "image": "image"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_GetMemo:memo_service_get_memo",
+      "operationId": "MemoService_GetMemo",
+      "methodName": "memo_service_get_memo",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo"
+      },
+      "argumentOrder": [
+        "memo"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "state": "STATE_UNSPECIFIED",
+          "creator": "creator",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "content": "content",
+          "visibility": "VISIBILITY_UNSPECIFIED",
+          "tags": [
+            "tags"
+          ],
+          "pinned": false,
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "property": {
+            "hasLink": false,
+            "hasTaskList": false,
+            "hasCode": false,
+            "hasIncompleteTasks": false,
+            "title": "title"
+          },
+          "parent": "parent",
+          "snippet": "snippet",
+          "location": {
+            "placeholder": "placeholder",
+            "latitude": 1,
+            "longitude": 1
+          },
+          "space": "space"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_GetSharedMemo:memo_service_get_shared_memo",
+      "operationId": "MemoService_GetSharedMemo",
+      "methodName": "memo_service_get_shared_memo",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "share_token": "shareToken"
+      },
+      "argumentOrder": [
+        "share_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "state": "STATE_UNSPECIFIED",
+          "creator": "creator",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "content": "content",
+          "visibility": "VISIBILITY_UNSPECIFIED",
+          "tags": [
+            "tags"
+          ],
+          "pinned": false,
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "property": {
+            "hasLink": false,
+            "hasTaskList": false,
+            "hasCode": false,
+            "hasIncompleteTasks": false,
+            "title": "title"
+          },
+          "parent": "parent",
+          "snippet": "snippet",
+          "location": {
+            "placeholder": "placeholder",
+            "latitude": 1,
+            "longitude": 1
+          },
+          "space": "space"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemoAttachments:memo_service_list_memo_attachments",
+      "operationId": "MemoService_ListMemoAttachments",
+      "methodName": "memo_service_list_memo_attachments",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "memo",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemoComments:memo_service_list_memo_comments",
+      "operationId": "MemoService_ListMemoComments",
+      "methodName": "memo_service_list_memo_comments",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "page_size": 30,
+        "page_token": "pageToken",
+        "order_by": "orderBy"
+      },
+      "argumentOrder": [
+        "memo",
+        "page_size",
+        "page_token",
+        "order_by"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "memos": [
+            {
+              "name": "Example Name",
+              "state": "STATE_UNSPECIFIED",
+              "creator": "creator",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z",
+              "content": "content",
+              "visibility": "VISIBILITY_UNSPECIFIED",
+              "tags": [
+                "tags"
+              ],
+              "pinned": false,
+              "attachments": [
+                {
+                  "name": "Example Name",
+                  "createTime": "2024-01-01T00:00:00Z",
+                  "filename": "Example Name",
+                  "content": "content",
+                  "externalLink": "https://example.com",
+                  "type": "type",
+                  "size": "size",
+                  "memo": "memo",
+                  "motionMedia": {
+                    "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                    "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                    "groupId": "group-1",
+                    "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                    "hasEmbeddedVideo": false
+                  },
+                  "mediaMetadata": {
+                    "width": 1,
+                    "height": 1,
+                    "photo": {
+                      "captureTime": {
+                        "localDateTime": "",
+                        "utcOffset": ""
+                      },
+                      "location": {
+                        "latitude": 0,
+                        "longitude": 0,
+                        "altitudeMeters": 0
+                      },
+                      "sourceExifOrientation": 1,
+                      "cameraMake": "cameraMake",
+                      "cameraModel": "cameraModel",
+                      "lensModel": "lensModel",
+                      "fNumber": 1,
+                      "exposureTimeSeconds": 1,
+                      "iso": 1,
+                      "focalLengthMm": 1
+                    },
+                    "video": {
+                      "durationSeconds": 1
+                    }
+                  },
+                  "creator": "creator"
+                }
+              ],
+              "relations": [
+                {
+                  "memo": {
+                    "name": "Example Name",
+                    "snippet": "snippet"
+                  },
+                  "relatedMemo": {
+                    "name": "Example Name",
+                    "snippet": "snippet"
+                  },
+                  "type": "TYPE_UNSPECIFIED"
+                }
+              ],
+              "reactions": [
+                {
+                  "name": "Example Name",
+                  "creator": "creator",
+                  "reactionType": "reactionType",
+                  "createTime": "2024-01-01T00:00:00Z"
+                }
+              ],
+              "property": {
+                "hasLink": false,
+                "hasTaskList": false,
+                "hasCode": false,
+                "hasIncompleteTasks": false,
+                "title": "title"
+              },
+              "parent": "parent",
+              "snippet": "snippet",
+              "location": {
+                "placeholder": "placeholder",
+                "latitude": 1,
+                "longitude": 1
+              },
+              "space": "space"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemoReactions:memo_service_list_memo_reactions",
+      "operationId": "MemoService_ListMemoReactions",
+      "methodName": "memo_service_list_memo_reactions",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "memo",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemoRelations:memo_service_list_memo_relations",
+      "operationId": "MemoService_ListMemoRelations",
+      "methodName": "memo_service_list_memo_relations",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "memo",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemos:memo_service_list_memos",
+      "operationId": "MemoService_ListMemos",
+      "methodName": "memo_service_list_memos",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "page_size": 30,
+        "page_token": "pageToken",
+        "state": "STATE_UNSPECIFIED",
+        "order_by": "orderBy",
+        "filter": "filter",
+        "show_deleted": false
+      },
+      "argumentOrder": [
+        "page_size",
+        "page_token",
+        "state",
+        "order_by",
+        "filter",
+        "show_deleted"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "memos": [
+            {
+              "name": "Example Name",
+              "state": "STATE_UNSPECIFIED",
+              "creator": "creator",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z",
+              "content": "content",
+              "visibility": "VISIBILITY_UNSPECIFIED",
+              "tags": [
+                "tags"
+              ],
+              "pinned": false,
+              "attachments": [
+                {
+                  "name": "Example Name",
+                  "createTime": "2024-01-01T00:00:00Z",
+                  "filename": "Example Name",
+                  "content": "content",
+                  "externalLink": "https://example.com",
+                  "type": "type",
+                  "size": "size",
+                  "memo": "memo",
+                  "motionMedia": {
+                    "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                    "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                    "groupId": "group-1",
+                    "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                    "hasEmbeddedVideo": false
+                  },
+                  "mediaMetadata": {
+                    "width": 1,
+                    "height": 1,
+                    "photo": {
+                      "captureTime": {
+                        "localDateTime": "",
+                        "utcOffset": ""
+                      },
+                      "location": {
+                        "latitude": 0,
+                        "longitude": 0,
+                        "altitudeMeters": 0
+                      },
+                      "sourceExifOrientation": 1,
+                      "cameraMake": "cameraMake",
+                      "cameraModel": "cameraModel",
+                      "lensModel": "lensModel",
+                      "fNumber": 1,
+                      "exposureTimeSeconds": 1,
+                      "iso": 1,
+                      "focalLengthMm": 1
+                    },
+                    "video": {
+                      "durationSeconds": 1
+                    }
+                  },
+                  "creator": "creator"
+                }
+              ],
+              "relations": [
+                {
+                  "memo": {
+                    "name": "Example Name",
+                    "snippet": "snippet"
+                  },
+                  "relatedMemo": {
+                    "name": "Example Name",
+                    "snippet": "snippet"
+                  },
+                  "type": "TYPE_UNSPECIFIED"
+                }
+              ],
+              "reactions": [
+                {
+                  "name": "Example Name",
+                  "creator": "creator",
+                  "reactionType": "reactionType",
+                  "createTime": "2024-01-01T00:00:00Z"
+                }
+              ],
+              "property": {
+                "hasLink": false,
+                "hasTaskList": false,
+                "hasCode": false,
+                "hasIncompleteTasks": false,
+                "title": "title"
+              },
+              "parent": "parent",
+              "snippet": "snippet",
+              "location": {
+                "placeholder": "placeholder",
+                "latitude": 1,
+                "longitude": 1
+              },
+              "space": "space"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_ListMemoShares:memo_service_list_memo_shares",
+      "operationId": "MemoService_ListMemoShares",
+      "methodName": "memo_service_list_memo_shares",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo"
+      },
+      "argumentOrder": [
+        "memo"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "memoShares": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "expireTime": "2024-01-01T00:00:00Z"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_SetMemoAttachments:memo_service_set_memo_attachments",
+      "operationId": "MemoService_SetMemoAttachments",
+      "methodName": "memo_service_set_memo_attachments",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "name": "Example Name",
+        "attachments": [
+          {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "memo",
+        "name",
+        "attachments"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_SetMemoRelations:memo_service_set_memo_relations",
+      "operationId": "MemoService_SetMemoRelations",
+      "methodName": "memo_service_set_memo_relations",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "name": "Example Name",
+        "relations": [
+          {
+            "memo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "relatedMemo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "type": "TYPE_UNSPECIFIED"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "memo",
+        "name",
+        "relations"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_UpdateMemo:memo_service_update_memo",
+      "operationId": "MemoService_UpdateMemo",
+      "methodName": "memo_service_update_memo",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "state": "STATE_UNSPECIFIED",
+        "content": "content",
+        "visibility": "VISIBILITY_UNSPECIFIED",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "creator": "creator",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z",
+        "tags": [
+          "tags"
+        ],
+        "pinned": false,
+        "attachments": [
+          {
+            "name": "Example Name",
+            "createTime": "2024-01-01T00:00:00Z",
+            "filename": "Example Name",
+            "content": "content",
+            "externalLink": "https://example.com",
+            "type": "type",
+            "size": "size",
+            "memo": "memo",
+            "motionMedia": {
+              "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+              "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+              "groupId": "group-1",
+              "presentationTimestampUs": "2024-01-01T00:00:00Z",
+              "hasEmbeddedVideo": false
+            },
+            "mediaMetadata": {
+              "width": 1,
+              "height": 1,
+              "photo": {
+                "captureTime": {
+                  "localDateTime": "2024-01-01T00:00:00Z",
+                  "utcOffset": "utcOffset"
+                },
+                "location": {
+                  "latitude": 1,
+                  "longitude": 1,
+                  "altitudeMeters": 1
+                },
+                "sourceExifOrientation": 1,
+                "cameraMake": "cameraMake",
+                "cameraModel": "cameraModel",
+                "lensModel": "lensModel",
+                "fNumber": 1,
+                "exposureTimeSeconds": 1,
+                "iso": 1,
+                "focalLengthMm": 1
+              },
+              "video": {
+                "durationSeconds": 1
+              }
+            },
+            "creator": "creator"
+          }
+        ],
+        "relations": [
+          {
+            "memo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "relatedMemo": {
+              "name": "Example Name",
+              "snippet": "snippet"
+            },
+            "type": "TYPE_UNSPECIFIED"
+          }
+        ],
+        "reactions": [
+          {
+            "name": "Example Name",
+            "creator": "creator",
+            "reactionType": "reactionType",
+            "createTime": "2024-01-01T00:00:00Z"
+          }
+        ],
+        "property": {
+          "hasLink": false,
+          "hasTaskList": false,
+          "hasCode": false,
+          "hasIncompleteTasks": false,
+          "title": "title"
+        },
+        "parent": "parent",
+        "snippet": "snippet",
+        "location": {
+          "placeholder": "placeholder",
+          "latitude": 1,
+          "longitude": 1
+        },
+        "space": "space"
+      },
+      "argumentOrder": [
+        "memo",
+        "state",
+        "content",
+        "visibility",
+        "update_mask",
+        "name",
+        "creator",
+        "create_time",
+        "update_time",
+        "tags",
+        "pinned",
+        "attachments",
+        "relations",
+        "reactions",
+        "property",
+        "parent",
+        "snippet",
+        "location",
+        "space"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "state": "STATE_UNSPECIFIED",
+          "creator": "creator",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "content": "content",
+          "visibility": "VISIBILITY_UNSPECIFIED",
+          "tags": [
+            "tags"
+          ],
+          "pinned": false,
+          "attachments": [
+            {
+              "name": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "filename": "Example Name",
+              "content": "content",
+              "externalLink": "https://example.com",
+              "type": "type",
+              "size": "size",
+              "memo": "memo",
+              "motionMedia": {
+                "family": "MOTION_MEDIA_FAMILY_UNSPECIFIED",
+                "role": "MOTION_MEDIA_ROLE_UNSPECIFIED",
+                "groupId": "group-1",
+                "presentationTimestampUs": "2024-01-01T00:00:00Z",
+                "hasEmbeddedVideo": false
+              },
+              "mediaMetadata": {
+                "width": 1,
+                "height": 1,
+                "photo": {
+                  "captureTime": {
+                    "localDateTime": "2024-01-01T00:00:00Z",
+                    "utcOffset": "utcOffset"
+                  },
+                  "location": {
+                    "latitude": 1,
+                    "longitude": 1,
+                    "altitudeMeters": 1
+                  },
+                  "sourceExifOrientation": 1,
+                  "cameraMake": "cameraMake",
+                  "cameraModel": "cameraModel",
+                  "lensModel": "lensModel",
+                  "fNumber": 1,
+                  "exposureTimeSeconds": 1,
+                  "iso": 1,
+                  "focalLengthMm": 1
+                },
+                "video": {
+                  "durationSeconds": 1
+                }
+              },
+              "creator": "creator"
+            }
+          ],
+          "relations": [
+            {
+              "memo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "relatedMemo": {
+                "name": "Example Name",
+                "snippet": "snippet"
+              },
+              "type": "TYPE_UNSPECIFIED"
+            }
+          ],
+          "reactions": [
+            {
+              "name": "Example Name",
+              "creator": "creator",
+              "reactionType": "reactionType",
+              "createTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "property": {
+            "hasLink": false,
+            "hasTaskList": false,
+            "hasCode": false,
+            "hasIncompleteTasks": false,
+            "title": "title"
+          },
+          "parent": "parent",
+          "snippet": "snippet",
+          "location": {
+            "placeholder": "placeholder",
+            "latitude": 1,
+            "longitude": 1
+          },
+          "space": "space"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "MemoService_UpsertMemoReaction:memo_service_upsert_memo_reaction",
+      "operationId": "MemoService_UpsertMemoReaction",
+      "methodName": "memo_service_upsert_memo_reaction",
+      "namespace": [
+        "memoService"
+      ],
+      "mode": "normal",
+      "owner": "memo_service",
+      "arguments": {
+        "memo": "memo",
+        "name": "Example Name",
+        "reaction": {
+          "name": "Example Name",
+          "creator": "creator",
+          "reactionType": "reactionType",
+          "createTime": "2024-01-01T00:00:00Z"
+        }
+      },
+      "argumentOrder": [
+        "memo",
+        "name",
+        "reaction"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "creator": "creator",
+          "reactionType": "reactionType",
+          "createTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_AcceptSpaceInvitation:space_service_accept_space_invitation",
+      "operationId": "SpaceService_AcceptSpaceInvitation",
+      "methodName": "space_service_accept_space_invitation",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "invitation": "invitation",
+        "name": "Example Name"
+      },
+      "argumentOrder": [
+        "space",
+        "invitation",
+        "name"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "user": "user",
+          "role": "ROLE_UNSPECIFIED"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_CreateSpace:space_service_create_space",
+      "operationId": "SpaceService_CreateSpace",
+      "methodName": "space_service_create_space",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "title": "title",
+        "space_id": "space-1",
+        "name": "Example Name",
+        "description": "example text",
+        "current_user_role": "ROLE_UNSPECIFIED",
+        "member_count": 1,
+        "icon": {
+          "emoji": "emoji",
+          "lucide": "lucide"
+        }
+      },
+      "argumentOrder": [
+        "title",
+        "space_id",
+        "name",
+        "description",
+        "current_user_role",
+        "member_count",
+        "icon"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "description": "example text",
+          "currentUserRole": "ROLE_UNSPECIFIED",
+          "memberCount": 1,
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_CreateSpaceInvitation:space_service_create_space_invitation",
+      "operationId": "SpaceService_CreateSpaceInvitation",
+      "methodName": "space_service_create_space_invitation",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "invitee": "invitee",
+        "role": "ROLE_UNSPECIFIED",
+        "name": "Example Name",
+        "space_2": {
+          "name": "Example Name",
+          "title": "title",
+          "description": "example text",
+          "currentUserRole": "ROLE_UNSPECIFIED",
+          "memberCount": 1,
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        }
+      },
+      "argumentOrder": [
+        "space",
+        "invitee",
+        "role",
+        "name",
+        "space_2"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "invitee": "invitee",
+          "role": "ROLE_UNSPECIFIED",
+          "space": {
+            "name": "Example Name",
+            "title": "title",
+            "description": "example text",
+            "currentUserRole": "ROLE_UNSPECIFIED",
+            "memberCount": 1,
+            "icon": {
+              "emoji": "emoji",
+              "lucide": "lucide"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_DeclineSpaceInvitation:space_service_decline_space_invitation",
+      "operationId": "SpaceService_DeclineSpaceInvitation",
+      "methodName": "space_service_decline_space_invitation",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "invitation": "invitation",
+        "name": "Example Name"
+      },
+      "argumentOrder": [
+        "space",
+        "invitation",
+        "name"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_DeleteSpace:space_service_delete_space",
+      "operationId": "SpaceService_DeleteSpace",
+      "methodName": "space_service_delete_space",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space"
+      },
+      "argumentOrder": [
+        "space"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_DeleteSpaceInvitation:space_service_delete_space_invitation",
+      "operationId": "SpaceService_DeleteSpaceInvitation",
+      "methodName": "space_service_delete_space_invitation",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "invitation": "invitation"
+      },
+      "argumentOrder": [
+        "space",
+        "invitation"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_DeleteSpaceMember:space_service_delete_space_member",
+      "operationId": "SpaceService_DeleteSpaceMember",
+      "methodName": "space_service_delete_space_member",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "member": "member"
+      },
+      "argumentOrder": [
+        "space",
+        "member"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_GetSpace:space_service_get_space",
+      "operationId": "SpaceService_GetSpace",
+      "methodName": "space_service_get_space",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space"
+      },
+      "argumentOrder": [
+        "space"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "description": "example text",
+          "currentUserRole": "ROLE_UNSPECIFIED",
+          "memberCount": 1,
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_GetSpaceInvitation:space_service_get_space_invitation",
+      "operationId": "SpaceService_GetSpaceInvitation",
+      "methodName": "space_service_get_space_invitation",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "invitation": "invitation"
+      },
+      "argumentOrder": [
+        "space",
+        "invitation"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "invitee": "invitee",
+          "role": "ROLE_UNSPECIFIED",
+          "space": {
+            "name": "Example Name",
+            "title": "title",
+            "description": "example text",
+            "currentUserRole": "ROLE_UNSPECIFIED",
+            "memberCount": 1,
+            "icon": {
+              "emoji": "emoji",
+              "lucide": "lucide"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_GetSpaceMember:space_service_get_space_member",
+      "operationId": "SpaceService_GetSpaceMember",
+      "methodName": "space_service_get_space_member",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "member": "member"
+      },
+      "argumentOrder": [
+        "space",
+        "member"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "user": "user",
+          "role": "ROLE_UNSPECIFIED"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_ListSpaceInvitations:space_service_list_space_invitations",
+      "operationId": "SpaceService_ListSpaceInvitations",
+      "methodName": "space_service_list_space_invitations",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "space",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "spaceInvitations": [
+            {
+              "name": "Example Name",
+              "invitee": "invitee",
+              "role": "ROLE_UNSPECIFIED",
+              "space": {
+                "name": "Example Name",
+                "title": "title",
+                "description": "example text",
+                "currentUserRole": "ROLE_UNSPECIFIED",
+                "memberCount": 1,
+                "icon": {
+                  "emoji": "emoji",
+                  "lucide": "lucide"
+                }
+              }
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_ListSpaceMembers:space_service_list_space_members",
+      "operationId": "SpaceService_ListSpaceMembers",
+      "methodName": "space_service_list_space_members",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "space",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "spaceMembers": [
+            {
+              "name": "Example Name",
+              "user": "user",
+              "role": "ROLE_UNSPECIFIED"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_ListSpaces:space_service_list_spaces",
+      "operationId": "SpaceService_ListSpaces",
+      "methodName": "space_service_list_spaces",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "spaces": [
+            {
+              "name": "Example Name",
+              "title": "title",
+              "description": "example text",
+              "currentUserRole": "ROLE_UNSPECIFIED",
+              "memberCount": 1,
+              "icon": {
+                "emoji": "emoji",
+                "lucide": "lucide"
+              }
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_ListUserSpaceInvitations:space_service_list_user_space_invitations",
+      "operationId": "SpaceService_ListUserSpaceInvitations",
+      "methodName": "space_service_list_user_space_invitations",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "user": "user",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "user",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "spaceInvitations": [
+            {
+              "name": "Example Name",
+              "invitee": "invitee",
+              "role": "ROLE_UNSPECIFIED",
+              "space": {
+                "name": "Example Name",
+                "title": "title",
+                "description": "example text",
+                "currentUserRole": "ROLE_UNSPECIFIED",
+                "memberCount": 1,
+                "icon": {
+                  "emoji": "emoji",
+                  "lucide": "lucide"
+                }
+              }
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_UpdateSpace:space_service_update_space",
+      "operationId": "SpaceService_UpdateSpace",
+      "methodName": "space_service_update_space",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "title": "title",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "description": "example text",
+        "current_user_role": "ROLE_UNSPECIFIED",
+        "member_count": 1,
+        "icon": {
+          "emoji": "emoji",
+          "lucide": "lucide"
+        }
+      },
+      "argumentOrder": [
+        "space",
+        "title",
+        "update_mask",
+        "name",
+        "description",
+        "current_user_role",
+        "member_count",
+        "icon"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "description": "example text",
+          "currentUserRole": "ROLE_UNSPECIFIED",
+          "memberCount": 1,
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpaceService_UpdateSpaceMember:space_service_update_space_member",
+      "operationId": "SpaceService_UpdateSpaceMember",
+      "methodName": "space_service_update_space_member",
+      "namespace": [
+        "spaceService"
+      ],
+      "mode": "normal",
+      "owner": "space_service",
+      "arguments": {
+        "space": "space",
+        "member": "member",
+        "user": "user",
+        "role": "ROLE_UNSPECIFIED",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name"
+      },
+      "argumentOrder": [
+        "space",
+        "member",
+        "user",
+        "role",
+        "update_mask",
+        "name"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "user": "user",
+          "role": "ROLE_UNSPECIFIED"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_BatchGetUsers:user_service_batch_get_users",
+      "operationId": "UserService_BatchGetUsers",
+      "methodName": "user_service_batch_get_users",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "usernames": [
+          "Example Name"
+        ]
+      },
+      "argumentOrder": [
+        "usernames"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "users": [
+            {
+              "name": "Example Name",
+              "role": "ROLE_UNSPECIFIED",
+              "username": "Example Name",
+              "email": "user@example.com",
+              "displayName": "Example Name",
+              "avatarUrl": "https://example.com",
+              "description": "example text",
+              "password": "password",
+              "state": "STATE_UNSPECIFIED",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_CreateLinkedIdentity:user_service_create_linked_identity",
+      "operationId": "UserService_CreateLinkedIdentity",
+      "methodName": "user_service_create_linked_identity",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "parent": "parent",
+        "idp_name": "Example Name",
+        "code": "code",
+        "redirect_uri": "https://example.com",
+        "code_verifier": "codeVerifier"
+      },
+      "argumentOrder": [
+        "user",
+        "parent",
+        "idp_name",
+        "code",
+        "redirect_uri",
+        "code_verifier"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "idpName": "Example Name",
+          "externUid": "externU-1"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_CreateMemoView:user_service_create_memo_view",
+      "operationId": "UserService_CreateMemoView",
+      "methodName": "user_service_create_memo_view",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "title": "title",
+        "filter": "filter",
+        "validate_only": false,
+        "name": "Example Name",
+        "icon": {
+          "emoji": "emoji",
+          "lucide": "lucide"
+        }
+      },
+      "argumentOrder": [
+        "user",
+        "title",
+        "filter",
+        "validate_only",
+        "name",
+        "icon"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "filter": "filter",
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_CreatePersonalAccessToken:user_service_create_personal_access_token",
+      "operationId": "UserService_CreatePersonalAccessToken",
+      "methodName": "user_service_create_personal_access_token",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "parent": "parent",
+        "description": "example text",
+        "expires_in_days": 1
+      },
+      "argumentOrder": [
+        "user",
+        "parent",
+        "description",
+        "expires_in_days"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "personalAccessToken": {
+            "name": "Example Name",
+            "description": "example text",
+            "createdAt": "2024-01-01T00:00:00Z",
+            "expiresAt": "2024-01-01T00:00:00Z",
+            "lastUsedAt": "2024-01-01T00:00:00Z"
+          },
+          "token": "token"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_CreateUser:user_service_create_user",
+      "operationId": "UserService_CreateUser",
+      "methodName": "user_service_create_user",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "role": "ROLE_UNSPECIFIED",
+        "username": "Example Name",
+        "state": "STATE_UNSPECIFIED",
+        "user_id": "user-1",
+        "validate_only": false,
+        "request_id": "request-1",
+        "name": "Example Name",
+        "email": "user@example.com",
+        "display_name": "Example Name",
+        "avatar_url": "https://example.com",
+        "description": "example text",
+        "password": "password",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z"
+      },
+      "argumentOrder": [
+        "role",
+        "username",
+        "state",
+        "user_id",
+        "validate_only",
+        "request_id",
+        "name",
+        "email",
+        "display_name",
+        "avatar_url",
+        "description",
+        "password",
+        "create_time",
+        "update_time"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "role": "ROLE_UNSPECIFIED",
+          "username": "Example Name",
+          "email": "user@example.com",
+          "displayName": "Example Name",
+          "avatarUrl": "https://example.com",
+          "description": "example text",
+          "password": "password",
+          "state": "STATE_UNSPECIFIED",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_CreateUserWebhook:user_service_create_user_webhook",
+      "operationId": "UserService_CreateUserWebhook",
+      "methodName": "user_service_create_user_webhook",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "name": "Example Name",
+        "url": "https://example.com",
+        "display_name": "Example Name",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z",
+        "signing_secret": "signingSecret",
+        "signing_secret_set": false
+      },
+      "argumentOrder": [
+        "user",
+        "name",
+        "url",
+        "display_name",
+        "create_time",
+        "update_time",
+        "signing_secret",
+        "signing_secret_set"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "url": "https://example.com",
+          "displayName": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "signingSecret": "signingSecret",
+          "signingSecretSet": false
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeleteLinkedIdentity:user_service_delete_linked_identity",
+      "operationId": "UserService_DeleteLinkedIdentity",
+      "methodName": "user_service_delete_linked_identity",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "linked_identity": "https://example.com"
+      },
+      "argumentOrder": [
+        "user",
+        "linked_identity"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeleteMemoView:user_service_delete_memo_view",
+      "operationId": "UserService_DeleteMemoView",
+      "methodName": "user_service_delete_memo_view",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "view": "view"
+      },
+      "argumentOrder": [
+        "user",
+        "view"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeletePersonalAccessToken:user_service_delete_personal_access_token",
+      "operationId": "UserService_DeletePersonalAccessToken",
+      "methodName": "user_service_delete_personal_access_token",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "personal_access_token": "personalAccessToken"
+      },
+      "argumentOrder": [
+        "user",
+        "personal_access_token"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeleteUser:user_service_delete_user",
+      "operationId": "UserService_DeleteUser",
+      "methodName": "user_service_delete_user",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "force": false
+      },
+      "argumentOrder": [
+        "user",
+        "force"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeleteUserNotification:user_service_delete_user_notification",
+      "operationId": "UserService_DeleteUserNotification",
+      "methodName": "user_service_delete_user_notification",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "notification": "notification"
+      },
+      "argumentOrder": [
+        "user",
+        "notification"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_DeleteUserWebhook:user_service_delete_user_webhook",
+      "operationId": "UserService_DeleteUserWebhook",
+      "methodName": "user_service_delete_user_webhook",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "webhook": "webhook"
+      },
+      "argumentOrder": [
+        "user",
+        "webhook"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ExportMemos:user_service_export_memos",
+      "operationId": "UserService_ExportMemos",
+      "methodName": "user_service_export_memos",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user"
+      },
+      "argumentOrder": [
+        "user"
+      ],
+      "response": {
+        "kind": "bytes",
+        "expected": null,
+        "byteLength": 8
+      }
+    },
+    {
+      "id": "UserService_GetLinkedIdentity:user_service_get_linked_identity",
+      "operationId": "UserService_GetLinkedIdentity",
+      "methodName": "user_service_get_linked_identity",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "linked_identity": "https://example.com"
+      },
+      "argumentOrder": [
+        "user",
+        "linked_identity"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "idpName": "Example Name",
+          "externUid": "externU-1"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_GetMemoView:user_service_get_memo_view",
+      "operationId": "UserService_GetMemoView",
+      "methodName": "user_service_get_memo_view",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "view": "view"
+      },
+      "argumentOrder": [
+        "user",
+        "view"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "filter": "filter",
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_GetUser:user_service_get_user",
+      "operationId": "UserService_GetUser",
+      "methodName": "user_service_get_user",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "read_mask": "readMask"
+      },
+      "argumentOrder": [
+        "user",
+        "read_mask"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "role": "ROLE_UNSPECIFIED",
+          "username": "Example Name",
+          "email": "user@example.com",
+          "displayName": "Example Name",
+          "avatarUrl": "https://example.com",
+          "description": "example text",
+          "password": "password",
+          "state": "STATE_UNSPECIFIED",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_GetUserSetting:user_service_get_user_setting",
+      "operationId": "UserService_GetUserSetting",
+      "methodName": "user_service_get_user_setting",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "setting": "setting"
+      },
+      "argumentOrder": [
+        "user",
+        "setting"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "generalSetting": {
+            "locale": "locale",
+            "memoVisibility": "memoVisibility",
+            "theme": "theme",
+            "saveMediaMetadata": false
+          },
+          "webhooksSetting": {
+            "webhooks": [
+              {
+                "name": "Example Name",
+                "url": "https://example.com",
+                "displayName": "Example Name",
+                "createTime": "2024-01-01T00:00:00Z",
+                "updateTime": "2024-01-01T00:00:00Z",
+                "signingSecret": "signingSecret",
+                "signingSecretSet": false
+              }
+            ]
+          },
+          "tagsSetting": {
+            "tags": {
+              "key": {
+                "backgroundColor": {
+                  "red": 1,
+                  "green": 1,
+                  "blue": 1,
+                  "alpha": 1
+                },
+                "blurContent": false
+              }
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_GetUserStats:user_service_get_user_stats",
+      "operationId": "UserService_GetUserStats",
+      "methodName": "user_service_get_user_stats",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "filter": "filter"
+      },
+      "argumentOrder": [
+        "user",
+        "filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "memoTypeStats": {
+            "linkCount": 1,
+            "codeCount": 1,
+            "todoCount": 1,
+            "undoCount": 1
+          },
+          "tagCount": {
+            "key": 1
+          },
+          "memoCreatedTimestamps": [
+            "2024-01-01T00:00:00Z"
+          ],
+          "memoUpdatedTimestamps": [
+            "2024-01-01T00:00:00Z"
+          ],
+          "pinnedMemos": [
+            "pinnedMemos"
+          ],
+          "totalMemoCount": 100,
+          "attachmentStorageBytes": "attachmentStorageBytes"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_GetUserWebhookSigningSecret:user_service_get_user_webhook_signing_secret",
+      "operationId": "UserService_GetUserWebhookSigningSecret",
+      "methodName": "user_service_get_user_webhook_signing_secret",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "webhook": "webhook"
+      },
+      "argumentOrder": [
+        "user",
+        "webhook"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "signingSecret": "signingSecret"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ImportMemos:user_service_import_memos",
+      "operationId": "UserService_ImportMemos",
+      "methodName": "user_service_import_memos",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "name": "Example Name",
+        "write_offset": "writeOffset",
+        "spec": {
+          "totalSize": "totalSize"
+        },
+        "upload_id": "upload-1",
+        "data": "data",
+        "finish_write": false,
+        "validate_only": false,
+        "conflict_policy": "CONFLICT_POLICY_UNSPECIFIED"
+      },
+      "argumentOrder": [
+        "user",
+        "name",
+        "write_offset",
+        "spec",
+        "upload_id",
+        "data",
+        "finish_write",
+        "validate_only",
+        "conflict_policy"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "uploadId": "upload-1",
+          "committedSize": "committedSize",
+          "maxChunkSize": 1,
+          "plan": {
+            "exportTime": "2024-01-01T00:00:00Z",
+            "exporter": "exporter",
+            "generator": "generator",
+            "memos": 1,
+            "attachments": 1,
+            "new": 1,
+            "existing": 1,
+            "renamed": 1,
+            "warnings": [
+              {
+                "memo": "memo",
+                "message": "example text"
+              }
+            ]
+          },
+          "report": {
+            "created": 1,
+            "updated": 1,
+            "skipped": 1,
+            "failed": 1,
+            "warnings": [
+              {
+                "memo": "memo",
+                "message": "example text"
+              }
+            ],
+            "failures": [
+              {
+                "memo": "memo",
+                "message": "example text"
+              }
+            ]
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListAllUserStats:user_service_list_all_user_stats",
+      "operationId": "UserService_ListAllUserStats",
+      "methodName": "user_service_list_all_user_stats",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "state": "STATE_UNSPECIFIED",
+        "filter": "filter"
+      },
+      "argumentOrder": [
+        "state",
+        "filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "stats": [
+            {
+              "name": "Example Name",
+              "memoTypeStats": {
+                "linkCount": 1,
+                "codeCount": 1,
+                "todoCount": 1,
+                "undoCount": 1
+              },
+              "tagCount": {
+                "key": 1
+              },
+              "memoCreatedTimestamps": [
+                "2024-01-01T00:00:00Z"
+              ],
+              "memoUpdatedTimestamps": [
+                "2024-01-01T00:00:00Z"
+              ],
+              "pinnedMemos": [
+                "pinnedMemos"
+              ],
+              "totalMemoCount": 100,
+              "attachmentStorageBytes": "attachmentStorageBytes"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListLinkedIdentities:user_service_list_linked_identities",
+      "operationId": "UserService_ListLinkedIdentities",
+      "methodName": "user_service_list_linked_identities",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user"
+      },
+      "argumentOrder": [
+        "user"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "linkedIdentities": [
+            {
+              "name": "Example Name",
+              "idpName": "Example Name",
+              "externUid": "externU-1"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListMemoViews:user_service_list_memo_views",
+      "operationId": "UserService_ListMemoViews",
+      "methodName": "user_service_list_memo_views",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user"
+      },
+      "argumentOrder": [
+        "user"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "memoViews": [
+            {
+              "name": "Example Name",
+              "title": "title",
+              "filter": "filter",
+              "icon": {
+                "emoji": "emoji",
+                "lucide": "lucide"
+              }
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListPersonalAccessTokens:user_service_list_personal_access_tokens",
+      "operationId": "UserService_ListPersonalAccessTokens",
+      "methodName": "user_service_list_personal_access_tokens",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "user",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "personalAccessTokens": [
+            {
+              "name": "Example Name",
+              "description": "example text",
+              "createdAt": "2024-01-01T00:00:00Z",
+              "expiresAt": "2024-01-01T00:00:00Z",
+              "lastUsedAt": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListUserNotifications:user_service_list_user_notifications",
+      "operationId": "UserService_ListUserNotifications",
+      "methodName": "user_service_list_user_notifications",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "page_size": 30,
+        "page_token": "pageToken",
+        "filter": "filter"
+      },
+      "argumentOrder": [
+        "user",
+        "page_size",
+        "page_token",
+        "filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "notifications": [
+            {
+              "name": "Example Name",
+              "sender": "sender",
+              "senderUser": {
+                "name": "Example Name",
+                "role": "ROLE_UNSPECIFIED",
+                "username": "Example Name",
+                "email": "user@example.com",
+                "displayName": "Example Name",
+                "avatarUrl": "https://example.com",
+                "description": "example text",
+                "password": "password",
+                "state": "STATE_UNSPECIFIED",
+                "createTime": "2024-01-01T00:00:00Z",
+                "updateTime": "2024-01-01T00:00:00Z"
+              },
+              "status": "STATUS_UNSPECIFIED",
+              "createTime": "2024-01-01T00:00:00Z",
+              "type": "TYPE_UNSPECIFIED",
+              "memoComment": {
+                "memo": "memo",
+                "relatedMemo": "relatedMemo",
+                "memoSnippet": "memoSnippet",
+                "relatedMemoSnippet": "relatedMemoSnippet"
+              },
+              "memoMention": {
+                "memo": "memo",
+                "relatedMemo": "relatedMemo",
+                "memoSnippet": "memoSnippet",
+                "relatedMemoSnippet": "relatedMemoSnippet"
+              },
+              "spaceInvitation": {
+                "spaceInvitation": "spaceInvitation",
+                "space": {
+                  "name": "Example Name",
+                  "title": "title",
+                  "description": "example text",
+                  "currentUserRole": "ROLE_UNSPECIFIED",
+                  "memberCount": 1,
+                  "icon": {
+                    "emoji": "",
+                    "lucide": ""
+                  }
+                },
+                "role": "ROLE_UNSPECIFIED",
+                "state": "STATE_UNSPECIFIED"
+              }
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListUsers:user_service_list_users",
+      "operationId": "UserService_ListUsers",
+      "methodName": "user_service_list_users",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "page_size": 30,
+        "page_token": "pageToken",
+        "filter": "filter",
+        "show_deleted": false
+      },
+      "argumentOrder": [
+        "page_size",
+        "page_token",
+        "filter",
+        "show_deleted"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "users": [
+            {
+              "name": "Example Name",
+              "role": "ROLE_UNSPECIFIED",
+              "username": "Example Name",
+              "email": "user@example.com",
+              "displayName": "Example Name",
+              "avatarUrl": "https://example.com",
+              "description": "example text",
+              "password": "password",
+              "state": "STATE_UNSPECIFIED",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z"
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListUserSettings:user_service_list_user_settings",
+      "operationId": "UserService_ListUserSettings",
+      "methodName": "user_service_list_user_settings",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "page_size": 30,
+        "page_token": "pageToken"
+      },
+      "argumentOrder": [
+        "user",
+        "page_size",
+        "page_token"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "settings": [
+            {
+              "name": "Example Name",
+              "generalSetting": {
+                "locale": "locale",
+                "memoVisibility": "memoVisibility",
+                "theme": "theme",
+                "saveMediaMetadata": false
+              },
+              "webhooksSetting": {
+                "webhooks": [
+                  {
+                    "name": "Example Name",
+                    "url": "https://example.com",
+                    "displayName": "Example Name",
+                    "createTime": "2024-01-01T00:00:00Z",
+                    "updateTime": "2024-01-01T00:00:00Z",
+                    "signingSecret": "signingSecret",
+                    "signingSecretSet": false
+                  }
+                ]
+              },
+              "tagsSetting": {
+                "tags": {
+                  "key": {
+                    "backgroundColor": {
+                      "red": 1,
+                      "green": 1,
+                      "blue": 1,
+                      "alpha": 1
+                    },
+                    "blurContent": false
+                  }
+                }
+              }
+            }
+          ],
+          "nextPageToken": "nextPageToken"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_ListUserWebhooks:user_service_list_user_webhooks",
+      "operationId": "UserService_ListUserWebhooks",
+      "methodName": "user_service_list_user_webhooks",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user"
+      },
+      "argumentOrder": [
+        "user"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "webhooks": [
+            {
+              "name": "Example Name",
+              "url": "https://example.com",
+              "displayName": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z",
+              "signingSecret": "signingSecret",
+              "signingSecretSet": false
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_UpdateMemoView:user_service_update_memo_view",
+      "operationId": "UserService_UpdateMemoView",
+      "methodName": "user_service_update_memo_view",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "view": "view",
+        "title": "title",
+        "filter": "filter",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "icon": {
+          "emoji": "emoji",
+          "lucide": "lucide"
+        }
+      },
+      "argumentOrder": [
+        "user",
+        "view",
+        "title",
+        "filter",
+        "update_mask",
+        "name",
+        "icon"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "title": "title",
+          "filter": "filter",
+          "icon": {
+            "emoji": "emoji",
+            "lucide": "lucide"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_UpdateUser:user_service_update_user",
+      "operationId": "UserService_UpdateUser",
+      "methodName": "user_service_update_user",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "role": "ROLE_UNSPECIFIED",
+        "username": "Example Name",
+        "state": "STATE_UNSPECIFIED",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "allow_missing": false,
+        "name": "Example Name",
+        "email": "user@example.com",
+        "display_name": "Example Name",
+        "avatar_url": "https://example.com",
+        "description": "example text",
+        "password": "password",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z"
+      },
+      "argumentOrder": [
+        "user",
+        "role",
+        "username",
+        "state",
+        "update_mask",
+        "allow_missing",
+        "name",
+        "email",
+        "display_name",
+        "avatar_url",
+        "description",
+        "password",
+        "create_time",
+        "update_time"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "role": "ROLE_UNSPECIFIED",
+          "username": "Example Name",
+          "email": "user@example.com",
+          "displayName": "Example Name",
+          "avatarUrl": "https://example.com",
+          "description": "example text",
+          "password": "password",
+          "state": "STATE_UNSPECIFIED",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_UpdateUserNotification:user_service_update_user_notification",
+      "operationId": "UserService_UpdateUserNotification",
+      "methodName": "user_service_update_user_notification",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "notification": "notification",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "sender": "sender",
+        "sender_user": {
+          "name": "Example Name",
+          "role": "ROLE_UNSPECIFIED",
+          "username": "Example Name",
+          "email": "user@example.com",
+          "displayName": "Example Name",
+          "avatarUrl": "https://example.com",
+          "description": "example text",
+          "password": "password",
+          "state": "STATE_UNSPECIFIED",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z"
+        },
+        "status": "STATUS_UNSPECIFIED",
+        "create_time": "2024-01-01T00:00:00Z",
+        "type": "TYPE_UNSPECIFIED",
+        "memo_comment": {
+          "memo": "memo",
+          "relatedMemo": "relatedMemo",
+          "memoSnippet": "memoSnippet",
+          "relatedMemoSnippet": "relatedMemoSnippet"
+        },
+        "memo_mention": {
+          "memo": "memo",
+          "relatedMemo": "relatedMemo",
+          "memoSnippet": "memoSnippet",
+          "relatedMemoSnippet": "relatedMemoSnippet"
+        },
+        "space_invitation": {
+          "spaceInvitation": "spaceInvitation",
+          "space": {
+            "name": "Example Name",
+            "title": "title",
+            "description": "example text",
+            "currentUserRole": "ROLE_UNSPECIFIED",
+            "memberCount": 1,
+            "icon": {
+              "emoji": "emoji",
+              "lucide": "lucide"
+            }
+          },
+          "role": "ROLE_UNSPECIFIED",
+          "state": "STATE_UNSPECIFIED"
+        }
+      },
+      "argumentOrder": [
+        "user",
+        "notification",
+        "update_mask",
+        "name",
+        "sender",
+        "sender_user",
+        "status",
+        "create_time",
+        "type",
+        "memo_comment",
+        "memo_mention",
+        "space_invitation"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "sender": "sender",
+          "senderUser": {
+            "name": "Example Name",
+            "role": "ROLE_UNSPECIFIED",
+            "username": "Example Name",
+            "email": "user@example.com",
+            "displayName": "Example Name",
+            "avatarUrl": "https://example.com",
+            "description": "example text",
+            "password": "password",
+            "state": "STATE_UNSPECIFIED",
+            "createTime": "2024-01-01T00:00:00Z",
+            "updateTime": "2024-01-01T00:00:00Z"
+          },
+          "status": "STATUS_UNSPECIFIED",
+          "createTime": "2024-01-01T00:00:00Z",
+          "type": "TYPE_UNSPECIFIED",
+          "memoComment": {
+            "memo": "memo",
+            "relatedMemo": "relatedMemo",
+            "memoSnippet": "memoSnippet",
+            "relatedMemoSnippet": "relatedMemoSnippet"
+          },
+          "memoMention": {
+            "memo": "memo",
+            "relatedMemo": "relatedMemo",
+            "memoSnippet": "memoSnippet",
+            "relatedMemoSnippet": "relatedMemoSnippet"
+          },
+          "spaceInvitation": {
+            "spaceInvitation": "spaceInvitation",
+            "space": {
+              "name": "Example Name",
+              "title": "title",
+              "description": "example text",
+              "currentUserRole": "ROLE_UNSPECIFIED",
+              "memberCount": 1,
+              "icon": {
+                "emoji": "emoji",
+                "lucide": "lucide"
+              }
+            },
+            "role": "ROLE_UNSPECIFIED",
+            "state": "STATE_UNSPECIFIED"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_UpdateUserSetting:user_service_update_user_setting",
+      "operationId": "UserService_UpdateUserSetting",
+      "methodName": "user_service_update_user_setting",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "setting": "setting",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "general_setting": {
+          "locale": "locale",
+          "memoVisibility": "memoVisibility",
+          "theme": "theme",
+          "saveMediaMetadata": false
+        },
+        "webhooks_setting": {
+          "webhooks": [
+            {
+              "name": "Example Name",
+              "url": "https://example.com",
+              "displayName": "Example Name",
+              "createTime": "2024-01-01T00:00:00Z",
+              "updateTime": "2024-01-01T00:00:00Z",
+              "signingSecret": "signingSecret",
+              "signingSecretSet": false
+            }
+          ]
+        },
+        "tags_setting": {
+          "tags": {
+            "key": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1,
+                "alpha": 1
+              },
+              "blurContent": false
+            }
+          }
+        }
+      },
+      "argumentOrder": [
+        "user",
+        "setting",
+        "update_mask",
+        "name",
+        "general_setting",
+        "webhooks_setting",
+        "tags_setting"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "generalSetting": {
+            "locale": "locale",
+            "memoVisibility": "memoVisibility",
+            "theme": "theme",
+            "saveMediaMetadata": false
+          },
+          "webhooksSetting": {
+            "webhooks": [
+              {
+                "name": "Example Name",
+                "url": "https://example.com",
+                "displayName": "Example Name",
+                "createTime": "2024-01-01T00:00:00Z",
+                "updateTime": "2024-01-01T00:00:00Z",
+                "signingSecret": "signingSecret",
+                "signingSecretSet": false
+              }
+            ]
+          },
+          "tagsSetting": {
+            "tags": {
+              "key": {
+                "backgroundColor": {
+                  "red": 1,
+                  "green": 1,
+                  "blue": 1,
+                  "alpha": 1
+                },
+                "blurContent": false
+              }
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "UserService_UpdateUserWebhook:user_service_update_user_webhook",
+      "operationId": "UserService_UpdateUserWebhook",
+      "methodName": "user_service_update_user_webhook",
+      "namespace": [
+        "userService"
+      ],
+      "mode": "normal",
+      "owner": "user_service",
+      "arguments": {
+        "user": "user",
+        "webhook": "webhook",
+        "update_mask": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "url": "https://example.com",
+        "display_name": "Example Name",
+        "create_time": "2024-01-01T00:00:00Z",
+        "update_time": "2024-01-01T00:00:00Z",
+        "signing_secret": "signingSecret",
+        "signing_secret_set": false
+      },
+      "argumentOrder": [
+        "user",
+        "webhook",
+        "update_mask",
+        "name",
+        "url",
+        "display_name",
+        "create_time",
+        "update_time",
+        "signing_secret",
+        "signing_secret_set"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "name": "Example Name",
+          "url": "https://example.com",
+          "displayName": "Example Name",
+          "createTime": "2024-01-01T00:00:00Z",
+          "updateTime": "2024-01-01T00:00:00Z",
+          "signingSecret": "signingSecret",
+          "signingSecretSet": false
+        },
+        "byteLength": 0
+      }
+    }
+  ]
+}
