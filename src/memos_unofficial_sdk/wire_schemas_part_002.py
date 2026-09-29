@@ -293,7 +293,6 @@ WIRE_SCHEMAS_PART_2: dict[str, tuple[Any, dict[str, tuple[str, str | None]]]] = 
             "create_time": ("createTime", None),
         },
     ),
-    "RefreshTokenRequest": (None, {}),
     "RefreshTokenResponse": (
         None,
         {
@@ -430,6 +429,15 @@ WIRE_SCHEMAS_PART_2: dict[str, tuple[Any, dict[str, tuple[str, str | None]]]] = 
         None,
         {
             "text": ("text", None),
+        },
+    ),
+    "TranscriptionAudio": (
+        None,
+        {
+            "content": ("content", None),
+            "uri": ("uri", None),
+            "filename": ("filename", None),
+            "content_type": ("contentType", None),
         },
     ),
 }

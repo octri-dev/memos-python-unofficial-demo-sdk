@@ -19,6 +19,7 @@ from memos_unofficial_sdk.client import (
 )
 from memos_unofficial_sdk.types import (
     GetCurrentUserResponse,
+    RefreshTokenRequest,
     RefreshTokenResponse,
     SignInRequest_PasswordCredentials,
     SignInRequest_SSOCredentials,
@@ -93,6 +94,7 @@ AuthServiceRefreshTokenError: TypeAlias = Status
 
 async def auth_service_refresh_token(
     _client_config: ClientConfig,
+    body: RefreshTokenRequest,
     *,
     request_options: RequestOptions | None = None,
 ) -> RefreshTokenResponse:
@@ -107,6 +109,7 @@ async def auth_service_refresh_token(
     _resp = await sdk_request(
         "POST",
         "/api/v1/auth/refresh",
+        json=(NOT_GIVEN if body is NOT_GIVEN else to_wire(body, "RefreshTokenRequest")),
         operation_id="auth_service_refresh_token",
         response_decoder="json",
         request_options=request_options,
@@ -119,6 +122,7 @@ async def auth_service_refresh_token(
 
 def auth_service_refresh_token_sync(
     _client_config: ClientConfig,
+    body: RefreshTokenRequest,
     *,
     request_options: RequestOptions | None = None,
 ) -> RefreshTokenResponse:
@@ -133,6 +137,7 @@ def auth_service_refresh_token_sync(
     _resp = sdk_request_sync(
         "POST",
         "/api/v1/auth/refresh",
+        json=(NOT_GIVEN if body is NOT_GIVEN else to_wire(body, "RefreshTokenRequest")),
         operation_id="auth_service_refresh_token",
         response_decoder="json",
         request_options=request_options,

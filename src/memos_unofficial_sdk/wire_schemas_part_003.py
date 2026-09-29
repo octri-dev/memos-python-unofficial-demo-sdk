@@ -6,15 +6,6 @@ from __future__ import annotations
 from typing import Any
 
 WIRE_SCHEMAS_PART_3: dict[str, tuple[Any, dict[str, tuple[str, str | None]]]] = {
-    "TranscriptionAudio": (
-        None,
-        {
-            "content": ("content", None),
-            "uri": ("uri", None),
-            "filename": ("filename", None),
-            "content_type": ("contentType", None),
-        },
-    ),
     "UploadAttachmentRequest": (
         None,
         {
